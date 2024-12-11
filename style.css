@@ -1,0 +1,76 @@
+/* 名前、誕生日、所在のセクション */
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.personal-info h1 {
+  margin-bottom: 5px; /* 名前とサブタイトルの間に少しスペース */
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 1.2rem; /* 小さめのフォントサイズを設定 */
+  color: #555; /* 薄めのグレーでサブタイトルを表示 */
+  margin-bottom: 20px; /* サブタイトルと次の要素の間に余白を追加 */
+  text-align: center; /* サブタイトルも中央揃え */
+}
+
+.p-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-container p {
+  margin: 0 10px;
+}
+
+/* ベースのスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.selfie-image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.container {
+  text-align: left;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #555;
+}
