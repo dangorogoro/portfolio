@@ -17,7 +17,7 @@
 }
 
 .sub-title {
-  font-size: 1.2rem; /* 小さめのフォントサイズを設定 */
+  font-size: 1.5rem; /* 小さめのフォントサイズを設定 */
   color: #555; /* 薄めのグレーでサブタイトルを表示 */
   margin-bottom: 20px; /* サブタイトルと次の要素の間に余白を追加 */
   text-align: center; /* サブタイトルも中央揃え */
@@ -29,7 +29,7 @@
 }
 
 .p-container p {
-  margin: 0.1rem; /* 各pタグの間にスペースを追加 */
+  margin: 1rem; /* 各pタグの間にスペースを追加 */
 }
 
 /* ベースのスタイル */
@@ -55,10 +55,8 @@ body {
 }
 .self-content p {
   display: block;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-top: 0.1em; /* 上余白を小さく設定 */
+  margin-bottom: 0.1em; /* 下余白を小さく設定 */
   unicode-bidi: isolate;
 }
 h2 {
@@ -70,19 +68,64 @@ h2 {
   margin-inline-end: 0px;}
 
 
-a:hover {
-  background-color: #555;
-}
-
 /* 年度のタイトル */
 .year-info {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
   margin-left: 1.0rem; /* タイトルとリストの間隔を設定 */
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
 }
 
 .self-content {
   font-size: 1.2rem;
   color: #333;
   margin-left: 0.5rem; /* タイトルとリストの間隔を設定 */
+  margin-top: 0.5em; /* 上余白を小さく設定 */
+  margin-bottom: 0.5em; /* 下余白を小さく設定 */
+}
+.year-related-content {
+  font-size: 1.2rem;
+  color: #333;
+  margin-left: 0.5rem; /* タイトルとリストの間隔を設定 */
+  margin-top: 0.5em; /* 上余白を小さく設定 */
+  margin-bottom: 1em; /* 下余白を小さく設定 */
+}
+
+/* 名前と画像を隣に並べるためのスタイル */
+.info-header {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 垂直方向に中央揃え */
+  position: relative; /* 子要素の位置調整を可能にする */
+  gap: 10px; /* 画像とテキストの間隔を設定 */
+}
+
+/* dangorogoroのスタイル */
+.info-header h1 {
+  justify-content: center; /* 全体を中央揃え */
+}
+
+/* プロフィール画像のスタイル */
+.profile-image {
+  width: 75px; /* 必要に応じてサイズを調整 */
+  height: 75px; /* 必要に応じてサイズを調整 */
+  border-radius: 50%; /* 円形にする */
+  object-fit: cover; /* 画像を枠に収める */ 
+}
+
+/* プロフィール画像のスタイル */
+.profile-image {
+  width: 50px; /* 画像の幅を指定 */
+  height: 50px; /* 画像の高さを指定 */
+  border-radius: 50%; /* 円形にする */
+  object-fit: cover; /* 画像を枠内に収める */
+  position: absolute; /* 絶対位置を指定 */
+  left: calc(50% - 150px); /* dangorogoroの中央に対して少し左に配置 */
+  transform: translateX(-50%); /* 親要素の中央に揃えた基準に調整 */
+}
+
+/* 名前のスタイル */
+.info-header h1 {
+  margin: 0; /* 余白をリセット */
+  position: relative; /* 絶対位置の画像に影響を与えない */
 }
