@@ -1,9 +1,23 @@
+/* 基本設定 */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  position: relative;
+}
+
 /* 名前、誕生日、所在のセクション */
 .personal-info {
   display: flex;
-  flex-direction: column; /* 縦方向に並べる */
+  flex-direction: column;
   justify-content: center;
-  align-items: center; /* 要素を中央に揃える */
+  align-items: center;
   background-color: #f4f4f4;
   color: #333;
   padding: 20px;
@@ -12,7 +26,7 @@
 
 .personal-info h1 {
   font-size: 2rem;
-  margin-bottom: 5px; /* 名前とサブタイトルの間に少しスペース */
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -23,6 +37,30 @@
   text-align: center;
 }
 
+/* 名前と画像を隣に並べるためのスタイル */
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* プロフィール画像 */
+.profile-image {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* コンテナ */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* 段落のスタイル */
 .p-container {
   display: flex;
   justify-content: center;
@@ -32,104 +70,34 @@
   margin: 1rem;
 }
 
-/* ベースのスタイル */
-body {
-  font-family: Arial, sans-serif;
-  margin: 1rem;
-  padding: 2rem;
-  background-color: #f4f4f4;
-  position: relative;
-}
-
-.selfie-image {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-}
-
-.container {
-  width: 80%;
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-}
-
-.self-content p {
-  display: block;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  unicode-bidi: isolate;
-}
-
+/* h2のスタイル */
 h2 {
   font-size: 1.5rem;
   color: #333;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin: 1em 0;
 }
 
 /* 年度のタイトル */
-.year-info {
-  font-size: 1rem;
+.year-info,
+.year-related-content {
+  font-size: 1.1rem;
   color: #333;
-  margin-left: 1.0rem;
+  margin-left: 1rem;
   margin-top: 0.1em;
-  margin-bottom: 0.1em;
-}
-
-.self-content {
-  font-size: 1.2rem;
-  color: #333;
-  margin-left: 0.5rem;
-  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-.year-related-content {
+/* 自己紹介コンテンツ */
+.self-content {
   font-size: 1.2rem;
   color: #333;
-  margin-left: 0.5rem;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-}
-
-/* 名前と画像を隣に並べるためのスタイル */
-.info-header {
-  display: flex;
-  align-items: center;
-  position: relative;
-  gap: 10px;
-}
-
-/* プロフィール画像のスタイル */
-.profile-image {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* 名前のスタイル */
-.info-header h1 {
-  margin: 0;
-}
-
-/* 基本フォントサイズの調整 */
-html {
-  font-size: 14px;
-}
-
-body {
-  font-size: 0.9rem;
+  margin: 0.5em 0;
 }
 
 /* 箇条書き対応 */
 .self-content ul {
   padding-left: 1.5rem;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  margin: 0.3em 0;
 }
 
 .self-content li {
